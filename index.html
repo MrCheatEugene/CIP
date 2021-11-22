@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+	<title>CIP Code - Encrypt your text in picture</title>
+</head>
+<body>
+
+<div class="nes-container is-rounded is-dark">
+	<img src="CIPCODE.png" width="640" height="480">
+  <p>New era is coming. Use CIP(Characrer-In-Pixel) Code in your application and forget those boring QR codes!</p>
+
+</div>
+<div class="nes-container is-dark with-title">
+  <p class="title">What is CIP Code?</p>
+  <p>CIP code is an technology that can convert text <b>"like that one"</b> to color, and then put it as pixel on the final picture.  </p>
+  <p>You won't even see it on slightly big image(basically,everything bigger than 640x360 is big enough)! But, CIP Code system can both read and write text while you are looking at some funny images!</p>
+  <p>Won't you, after a hard day, all tired,just smile at some cat picture while security guy is scanning and verificating some stuff?</p>
+<a href="https://github.com/MrCheatEugene/CIP/"><p>Fork it at GitHub<i class="nes-octocat animate"></i></p></a>
+
+</div>
+<div class="nes-container is-dark with-title">
+  <p class="title">CIP Code example</p>
+  <p>Do you see text here? No? <b>Trust me, it's on there.</b> </p>
+    <img width="180" height="320" src="end.png" alt="CIP Code is there (Hello world!, height:99).">
+
+</div>
+
+<div class="nes-table-responsive">
+  <table class="nes-table is-bordered is-dark">
+    <thead>
+      <tr>
+        <th>Functions</th>
+        <th>CIP code</th>
+        <th>QR code</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      	<td>Storage limits</td>        
+      	<td>Unlimited text</td>
+        <td>3KB of binary/text</td>    
+      </tr>
+      <tr>
+      	<td>Can store</td>
+        <td>Binary, text in all languages and all chars</td>
+        <td>Characters that ID from ASCII table is less than 255</td>
+      </tr>
+<tr>
+      	<td>Decode time</td>
+        <td>Less than a second, can be done offline</td>
+        <td><a href="speed.png">3 seconds from localhost</a>, fully in PHP(can't run on mobile phone)</td>
+      </tr>
+<tr>
+      	<td>Minuses</td>
+        <td>3KB limit, can add little logo in the middle, should be monochrome.</td>
+        <td>Long decode time, can't store binary data or any ascii char what's ID is more than 255, if image is damaged or lost it's original colors - text will not be decoded.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="nes-container is-dark with-title">
+  <p class="title">Help us</p>
+  <p>CIP code is currently unstable and kinda crappy. If you are a PHP developer, please participate and help us in development!</p>
+<p>But for now - QR Code wins.   <i class="nes-icon trophy is-large"></i>
+</p>
+</div>
+
+</body>
+</html>
